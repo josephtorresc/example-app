@@ -12,65 +12,22 @@
 </head>
 <body>
 
-    <div class="align">
-        <h2>Turismo real</h2>
-        <div class="card">
-            <div class="head">
-                <div></div>
-                <a href="#login" class="selected" id=login>Iniciar sesión</a>
-                <a href="#register" id="register">Registrarse</a>
-                <div></div>
-            </div>
-            <div class="tabs">
-                <form action="">
-                    <div class="inputs item">
-                        <div class="input wrapper">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="Email" required> 
-                        </div>
-                        <div class="input wrapper">
-                            <input type="password" placeholder="Contraseña" required >
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div></div>
-                    </div>
-                    <button>Iniciar sesión</button>
-                    <div class="forget-pass">
-                        <span><a href="#">¿Olvidó su contraseña?</a></span>
-                    </div>
-                </form>
-                <form action="">
-                    <div class="inputs item">
-                        <div class="input wrapper">
-                            <input type="Email" placeholder="Email*" required>
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="input wrapper">
-                            <input type="text" placeholder="Nombres*" required>
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="input wrapper">
-                            <input type="text" placeholder="Apellidos*" required>
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="input wrapper">
-                            <input type="number" placeholder="Teléfono* (ej: 912345678)" pattern="[0-9]" required>
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="input wrapper">
-                            <input type="password" placeholder="Contraseña*" required>
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="input wrapper">
-                            <input type="password" placeholder="Repetir contraseña*" required>
-                            <i class="fas fa-lock"></i>
-                        </div>
-                    </div>
-                    <button>Registrarse</button>
-                </form>
-            </div>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted"></small>
         </div>
-    </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
 
     <script src="{% static 'vendor/jquery/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
